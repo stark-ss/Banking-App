@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="registerr.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+</head>
+<body>
+    <div class="form_card">
+    <div id="left_side" >
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, distinctio saepe fuga earum voluptatum consequatur ex est vel recusandae ducimus, ipsa repellat blanditiis cum tempora ipsam, placeat sunt tenetur voluptates!</p>
+    </div>
+    <main>
+     <form action="" method="post" id="form">
+        <h1 id="form_title">
+        <span class="create">CREATE ACCOUNT</span>
+    </h1>
+        <div id="nameinput">
+            <label for="user_name" id="name_label">Name</label><br>
+            <input type="text" name="account_name" placeholder="NAME" id="user_name" title="enter your full name" required>
+            <span id="name_error" class="error_msg"></span>
+        </div>
+        <div id="mailinput">
+        <label for="newmail" id="mail_label">e-mail</label><br>
+        <input type="email" name="account_email" placeholder="e-mail" id="newmail" title="enter your email" required>
+        <span id="mail_error" class="error_msg"></span>
+        </div>
+        <div id="set_password">
+            <label for="new_password" id="password_label">Set Password</label><br>
+         <div class="pass_int"> 
+            <input type="password" name="user_password" placeholder="Set Password" id="new_password" minlength="5" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{6,}"  required >
+            <button type="button" title="Show password" id="show_password"><i class="fa-regular fa-eye" id="toggle"></i></button>
+            <div class="tooltip">
+              Password must be at least 6 characters long and contain:
+              <ul>
+                <li>At least 1 uppercase letter</li>
+                <li>At least 1 number</li>
+                <li>At least 1 special character</li>
+              </ul>
+            </div>
+         </div>
+        <div id="strength">
+            <div id="meter"></div>
+        </div>
+        <span id="password_error" class="error_msg"></span>
+        </div>
+        <div id="set_password2">
+            <label for="confirm_password" id="confirm_label">Confirm Password</label><br>
+            <input type="password" placeholder="Confirm Password" id="confirm_password" required>
+            <span id="confirm_error" class="error_msg"></span>
+        </div>
+        <div id="submit">
+            <button type="submit" title="CREATE ACCOUNT" id="register">REGISTER</button>
+        </div>
+     </form>   
+    </main>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

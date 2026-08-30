@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css"> 
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <main>
+    <form action="" method="post" id="form">
+        <h1 >LOGIN</h1>
+        <!-- email-->
+         <div id="email_input">
+         <label for="accemail" id="email-label">email</label><br>
+         <input type="email" 
+         name="account_email" 
+         autocomplete="email" 
+         placeholder="e-mail" 
+         id="accemail"
+         required >
+         <span id="emailmsg"></span><br>
+         </div>
+         <!--password-->
+         <div id="password_input">
+         <label for="pass" id="pass-label">password</label><br>
+         <div class="password-wrapper">
+         <input type="password" 
+         name="user_password" 
+         placeholder="Type the password" 
+         id="pass"
+         minlength="5"
+         required>
+         <button type="button" title="show password" id="show-button"><i class="fa-regular
+         fa-eye" id="toggleicon"></i></button>
+         </div>
+         <br>
+         </div>
+         <button type="submit" title="SIGN IN" id="sign_in" disabled> SIGN IN </button><br>
+         <!--other options-->
+         <div id="other_options">
+         <a href="comingsoon.html">Forgot Password</a> 
+         <a href="register.html">Sign Up</a>
+         </div>
+    </form>
+ </main>
+    <script src="login.js"></script>
+</body>
+</html>

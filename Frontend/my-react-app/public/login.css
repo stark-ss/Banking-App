@@ -1,0 +1,192 @@
+body{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(grey.jpg);
+    background-size: cover;
+
+    color: aliceblue;
+}
+
+main{
+    height:450px ;
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+    border: 2px solid;
+    margin: 110px auto;
+    user-select: none;
+}
+h1 {
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#form{
+    height:450px ;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#accemail{
+    font-size: 15px;
+    position: relative;
+    font-weight: 1000;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    border-radius: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-color: rgb(0, 48, 48);
+    border: 2px solid;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#accemail::placeholder{
+    color: white;
+    opacity: 1;
+}
+#emailmsg{
+    position: absolute;
+}
+#email-label{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+}
+#password_input{
+    
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+#pass{
+    font-size: 15px;
+    font-weight: 1000;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    border-radius: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-color: rgb(0, 48, 48);
+    border: 2px solid;
+    padding-left: 15px;
+    padding-right: 45px;
+    box-sizing: border-box;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+#pass::placeholder{
+   color: white;
+   opacity: 1;
+}
+#pass-label{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85);
+}
+.password-wrapper{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+}
+#show-button{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    top: 12px;
+    transform: translate(-50%);
+    border: none;
+    border-radius: 60px;
+    background: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease, opacity 0.2s ease;
+   
+}
+#show-button:hover {
+    color: #00d2ff; 
+}
+#sign_in{
+    font-weight: bolder;
+    width: 200px;
+    height: 35px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 7px black;
+    padding: 5px 10px;
+    background-color: rgb(76, 74, 205);
+    font-size: large;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(135deg, #4c4acd, #6a11cb);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: none;
+    outline: none;
+}
+#sign_in:hover {
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6), 0 0 12px rgba(0, 0, 0, 0.4);
+}
+#sign_in:active {
+    transform: translateY(0);
+}
+#sign_in:disabled {
+    cursor: not-allowed;
+    opacity: 1;
+    transform: none;
+    box-shadow: 0px 3px 7px black;
+}
+
+
+#other_options{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
+}  
+#other_options a {
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+}
+#other_options a:hover{
+    text-decoration: underline;
+    color: #7d70f7;
+    text-shadow: 0 0 5px rgba(0, 208, 255, 0.36);
+
+}
+#accemail:focus, #pass:focus {
+    border-color: #00d2ff;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+}
